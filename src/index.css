@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-li.submenu-list{
+.submenu-list{
+    display: block;
     list-style-type: none;
     padding: 8px 16px;
     width: 100%;
@@ -11,6 +12,6 @@ li.submenu-list{
     margin: 4px 0;
     cursor: pointer;
 }
-li.submenu-list:hover{
+.submenu-list:hover{
     background-color: rgb(22 163 74);;
 }
