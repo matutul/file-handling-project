@@ -1,10 +1,10 @@
 import { Children } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { FiChevronLeft } from "react-icons/fi";
 
 const Sidebar = ({ title, children, showSidebar, setShowSidebar }) => {
   return (
     <div
-      className={` bg-gray-600 h-full relative transition-all duration-200 ${
+      className={` bg-slate-700 h-full relative transition-all duration-200 ${
         showSidebar ? "w-[250px]" : "-translate-x-full w-0"
       }`}
     >
@@ -16,7 +16,7 @@ const Sidebar = ({ title, children, showSidebar, setShowSidebar }) => {
         }`}
         onClick={() => setShowSidebar(!showSidebar)}
       >
-        <FaAngleLeft
+        <FiChevronLeft
           className={`p-2 transition-all duration-100 h-full w-full ${
             showSidebar ? "text-gray-200" : "text-gray-500 rotate-180 hover:text-white"
           }`}
