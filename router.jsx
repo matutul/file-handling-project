@@ -4,6 +4,9 @@ import FileHandling from "./src/pages/projects/FileHandling";
 import HamNoSysPlay from "./src/pages/projects/HamNoSysPlay";
 import ErrorPage from "./src/pages/ErrorPage";
 import UnderDeveloping from "./src/pages/UnderDeveloping";
+import WebSocket from "./src/pages/projects/WebSocket";
+import VideoComponent from "./src/pages/projects/VideoComponent";
+import WebcamPreview from "./src/service/WebCamPreview";
 
 
 const router = createBrowserRouter([
@@ -29,8 +32,12 @@ const router = createBrowserRouter([
                 element: <HamNoSysPlay />
             },
             {
-                path: "/projects/submenu_3",
-                element: <UnderDeveloping />
+                path: "/projects/websocket",
+                element: <WebSocket />
+            },
+            {
+                path: "/projects/webcam",
+                element: <WebcamPreview />
             },
             {
                 path: "get-brief",

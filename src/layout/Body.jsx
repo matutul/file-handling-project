@@ -6,7 +6,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 
 const menu = [
   { id: 1, title: "Dashboard", refer: "/dashboard", defaultSubmenuId: 1 },
-  { id: 2, title: "Projects", refer: "/projects", defaultSubmenuId: 1 },
+  { id: 2, title: "Projects", refer: "/projects", defaultSubmenuId: 4 },
   { id: 3, title: "Get brief", refer: "/get-brief", defaultSubmenuId: 1 },
   { id: 4, title: "About me", refer: "/about-me", defaultSubmenuId: 1 },
   { id: 5, title: "Contact", refer: "/contact", defaultSubmenuId: 1 },
@@ -27,7 +27,8 @@ const subMenu = [
     title: "Hamnosys play",
     refer: "/hamnosys-play",
   },
-  { subMenuId: 3, parentId: 2, title: "submenu 3", refer: "/submenu_3" },
+  { subMenuId: 3, parentId: 2, title: "Websocket", refer: "/websocket" },
+  {subMenuId: 4, parentId: 2, title: "Webcam", refer:"/webcam"},
 ];
 
 const Body = () => {
