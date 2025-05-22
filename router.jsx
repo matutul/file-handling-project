@@ -7,6 +7,7 @@ import UnderDeveloping from "./src/pages/UnderDeveloping";
 import WebSocket from "./src/pages/projects/WebSocket";
 import VideoComponent from "./src/pages/projects/VideoComponent";
 import WebcamPreview from "./src/service/WebCamPreview";
+import TimelineAnimation from "./src/pages/projects/TimelineAnimation";
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: "/projects/webcam",
                 element: <WebcamPreview />
+            },
+            {
+                path: "/projects/timeline-animation",
+                element: <TimelineAnimation />
             },
             {
                 path: "get-brief",

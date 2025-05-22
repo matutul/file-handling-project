@@ -29,6 +29,7 @@ const subMenu = [
   },
   { subMenuId: 3, parentId: 2, title: "Websocket", refer: "/websocket" },
   {subMenuId: 4, parentId: 2, title: "Webcam", refer:"/webcam"},
+  {subMenuId: 5, parentId: 2, title: "timeline animation", refer: "/timeline-animation"}
 ];
 
 const Body = () => {
